@@ -3,7 +3,7 @@ FROM ghcr.io/games-on-whales/steam:edge
 RUN <<_PLUGIN_INSTALL
 echo "Hello" >> /hello
 
-apt-get update && apt-get install -y jq
+apt-get update && apt-get install -y nano
 _PLUGIN_INSTALL
 
 COPY rootfs/ /
