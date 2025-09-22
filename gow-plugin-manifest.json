@@ -1,0 +1,12 @@
+{
+    "name": "gow-plugin-foo-bar",
+    "description": "A plugin that provides foo and bar functionalities.",
+    "author": "Your Name",
+    "conflicts": [
+        { "gow-plugin-baz-qux": "*" },
+        { "gow-plugin-hello-world": "<2.0.0" }
+    ],
+    "dependencies": [
+        { "gow-plugin-core": ">=1.5.0" }
+    ]
+}
