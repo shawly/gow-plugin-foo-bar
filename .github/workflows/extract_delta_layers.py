@@ -228,7 +228,7 @@ class DockerLayerExtractor:
                             if layer_path.exists():
                                 # Extract this layer to our output directory with index prefix
                                 layer_name = layer_file.replace('/', '_')
-                                indexed_layer_name = f"{i+1:02d}_{layer_name}"
+                                indexed_layer_name = f"{i+1:02d}_{layer_name}.tar"
                                 output_layer_path = layers_dir / indexed_layer_name
                                 
                                 shutil.copy2(layer_path, output_layer_path)
