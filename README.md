@@ -45,6 +45,9 @@ FROM ghcr.io/games-on-whales/steam:edge
 ADD gow-plugin-foo-bar@edge/layers/01_blobs_sha256_81952e8a70f0fbc1007e34553b3a1c840a07f6356065dad26d5bc4a1ba316d34.tar /
 ADD gow-plugin-foo-bar@edge/layers/02_blobs_sha256_83de25e2825f88b8305800f703d2e8b0c7b9c26ab9f993f06e3336b0cd7a9e3f.tar /
 ADD gow-plugin-foo-bar@edge/layers/03_blobs_sha256_bac336f3a117cd070cae0216bb445ac69d5228cdb3a13e9b8ba0f02329b102a1.tar /
+# extracted vars from manifest
+ENV FOO_ENABLED=true
+ENV BAR_LEVEL=5
 ```
 
 This would need to be done by Wolf itself when building the final image with all selected plugins.
